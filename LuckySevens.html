@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lucky Sevens</title>
+	<link rel="stylesheet" 
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+	crossorigin="anonymous">
+	<script type="text/javascript" src="LuckySevens.js"></script>
+	<style>
+	header {
+		text-align: center;
+		font-size: 500%;
+		}
+	</style>	
+</head>
+<body>
+	<header>
+	Lucky Sevens
+	</header>
+	<div style="text-align:center">
+				<label for="bet">Starting Bet:</label>
+					<input type="number" id="bet" name="bet" placeholder="$0.00">
+					<br />
+				<button onclick="playGame()" id='playButton'>Play</button>
+	<table id="results" class="table" style="display: none">
+		<thead>
+			<tr>
+				<th>Game Results</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Starting Bet</td>
+				<td><span id="startingBet"></span></td>
+			</tr>
+			<tr>
+				<td>Total Rolls Before Going Broke</td>
+				<td><span id="rollsNumber"></span></td>
+			</tr>
+			<tr>
+				<td>Highest Amount Won</td>
+				<td><span id="moneyMax"></span></td>
+			</tr>
+			<tr>
+				<td>Roll Count at Highest Amount Won</td>
+				<td><span id="rollsAtMax"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+</body>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+	integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+	crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+	integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+	crossorigin="anonymous"></script>
+</html>
